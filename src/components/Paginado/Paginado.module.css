@@ -1,0 +1,40 @@
+.buttonPag {
+  background-color: rgb(5, 5, 5);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  border-radius: 15px;
+  margin: 1px;
+  height: 2em;
+  width: 4em;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+}
+
+.buttonPag:hover {
+  background-color: rgb(255, 0, 127);
+  color: #ffffff;
+  text-decoration: solid;
+}
+
+.disabled {
+  background: none;
+}
+.pageNumber {
+  background-color: rgb(5, 5, 5);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  border-radius: 15px;
+  margin: 1px;
+  height: 2em;
+  width: 3em;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+}
+.disabled {
+  background: none;
+}
+.contpag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

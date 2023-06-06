@@ -1,0 +1,85 @@
+.grandContain {
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 10%;
+}
+
+.searchContainer {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-column-gap: 1%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search {
+  align-items: center;
+  height: 100px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 8px;
+}
+.searchTitle {
+  background-color: rgb(0, 79, 255);
+  border-radius: 10px 0px 0px 10px;
+  height: 3em;
+  width: 80%;
+  padding-left: 0.5em;
+  font-family: "Carter One", cursive;
+  font-size: 16px;
+  color: rgb(5, 5, 5);
+  display: inline;
+}
+
+.searchInput {
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+  height: 3.5em;
+  width: 55%;
+}
+.activityContainer {
+  padding: 2em;
+  margin: 10px 10px;
+  /*background-color: rgb(90, 177, 187);*/
+  border-radius: 15px;
+  width: 700px;
+}
+.buttonAct {
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  font-weight: 5em;
+  padding: 1em;
+  cursor: grab;
+  border: 0px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 3em;
+  width: fit-content;
+}
+.buttonAct:hover {
+  background-color: rgb(49, 175, 212);
+}
+.landing {
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  font-weight: 5em;
+  padding: 1em;
+  cursor: grab;
+  border: 0px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 3em;
+  width: fit-content;
+}
+.landing:hover {
+  background-color: rgb(49, 175, 212);
+}

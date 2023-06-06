@@ -1,0 +1,221 @@
+.containAll {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-column-gap: 1%;
+  margin-top: 10%;
+}
+.divLink {
+  /* background-color: pink;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3em;
+  width: fit-content;
+  margin: 15% 0% 3% 15%;
+}
+.buttonHome {
+  border: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 3em;
+  width: 5em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  display: flex;
+  cursor: grab;
+  text-decoration: none;
+}
+.buttonHome:hover {
+  background-color: rgb(49, 175, 212);
+}
+.addActivity {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 1%;
+  grid-row-gap: 10%;
+  justify-content: left;
+}
+.addActivity h2 {
+  background-color: rgb(0, 79, 255);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  border-radius: 15px;
+  height: 2em;
+  width: 10em;
+  text-align: center;
+  font-family: "Oleo Script", cursive;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+}
+.formAct {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  justify-content: left;
+}
+.activityName {
+  background-color: rgb(0, 79, 255);
+  border: 1px;
+  border-color: rgba(5, 5, 5);
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-flex;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.activityName label {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+.inputAct {
+  border-radius: 0px 10px 10px 0px;
+  height: 1.5em;
+  width: fit-content;
+}
+.activityCountry {
+  background-color: rgb(0, 79, 255);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;
+  border-color: rgba(5, 5, 5);
+  border-style: solid;
+  display: inline-flex;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 15px;
+}
+.activityCountry label {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+.selectCountry {
+  border-radius: 0px 10px 10px 0px;
+  height: 2em;
+  width: fit-content;
+}
+.activitySeason {
+  background-color: rgb(0, 79, 255);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;
+  border-color: rgba(5, 5, 5);
+  border-style: solid;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 15px;
+}
+.activitySeason {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+.selectSeason {
+  border-radius: 0px 10px 10px 0px;
+  height: 2em;
+  width: fit-content;
+}
+.activityDiff {
+  background-color: rgb(0, 79, 255);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;
+  border-color: rgba(5, 5, 5);
+  border-style: solid;
+  display: inline-flex;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 15px;
+}
+.activityDiff label {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+.inputDiff {
+  border-radius: 0px 10px 10px 0px;
+  height: 1.5em;
+  width: fit-content;
+}
+.activityDuration {
+  background-color: rgb(0, 79, 255);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px;
+  border-color: rgba(5, 5, 5);
+  border-style: solid;
+  display: inline-flex;
+  height: fit-content;
+  width: 18em;
+  margin-left: 15px;
+}
+.activityDuration label {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+.durationInput {
+  border-radius: 0px;
+  height: 1.5em;
+  width: fit-content;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+.buttonSubmit {
+  border: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 3em;
+  width: 10em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  cursor: grab;
+}
+.buttonSubmit:hover {
+  background-color: rgb(49, 175, 212);
+}
+.countryRender {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 188, 10);
+  font-family: "Carter One", cursive;
+  font-size: 24px;
+  background-color: rgba(5, 5, 5, 0.605);
+  border-radius: 15px;
+  animation: rotate-center 0.4s;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.countryRender img {
+  width: 50%;
+}
+.countryRender p {
+  text-align: center;
+}
+.buttonDelete {
+  border: 0px;
+  background-color: rgb(255, 0, 128);
+  width: 3em;
+  height: 2em;
+  border-radius: 15px;
+  transition: 0.5s;
+  margin-bottom: 5%;
+}
+.buttonDelete:hover {
+  background-color: rgb(95, 187, 151);
+}

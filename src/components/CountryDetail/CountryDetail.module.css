@@ -1,0 +1,177 @@
+.linkDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3em;
+  width: fit-content;
+  margin: 3% 0% 3% 5%;
+}
+.linkDiv button {
+  border: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 3em;
+  width: 5em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  display: flex;
+  cursor: grab;
+}
+.linkDiv button:hover {
+  background-color: rgb(49, 175, 212);
+}
+.detailContainer {
+  /*background-color: blue;*/
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.moreInfo {
+  background-color: rgba(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  border-radius: 15px;
+  height: 3em;
+  width: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0% 2% 40%;
+  font-family: "Oleo Script", cursive;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.countryCard {
+  background-color: rgba(5, 5, 5, 0.85);
+  border-radius: 15px;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.countryCard:hover {
+  background-color: rgba(15, 63, 107, 0.6);
+}
+.image {
+  display: block;
+  margin-left: 100px;
+}
+.image img {
+  width: 260px;
+  height: 200px;
+  margin-right: 15%;
+}
+.text {
+  display: block;
+  margin-left: 10%;
+  float: right;
+  text-align: center;
+}
+.text h2 {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Carter One", cursive;
+  color: rgb(255, 188, 10);
+}
+.text h4 {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Kanit", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.activityDiv {
+  background-color: rgb(5, 5, 5, 0.85);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 100%;
+  width: 90%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.activityDiv:hover {
+  background-color: rgba(15, 63, 107, 0.6);
+}
+.activityDiv h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Carter One", cursive;
+  color: rgb(255, 188, 10);
+}
+
+.insideAct {
+  /* background-color: rgb(0, 79, 255);*/
+  height: fit-content;
+  width: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0% 10% 5% 10%;
+
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.insideAct h4 {
+  text-align: center;
+  font-family: "Carter One", cursive;
+  font-size: 18px;
+  color: rgb(255, 188, 10);
+}
+
+.insideAct p {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Kanit", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.deleteAct {
+  border: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 2em;
+  width: 5em;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  cursor: grab;
+}
+.deleteAct:hover {
+  background-color: rgb(49, 175, 212);
+}
+.editAct {
+  border: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 0, 128);
+  box-shadow: 10px 10px 5px -4px rgba(22, 22, 22, 0.75);
+  color: rgb(255, 255, 255);
+  height: 2em;
+  width: 5em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carter One", cursive;
+  font-size: 14px;
+  cursor: grab;
+  float: right;
+}
+.editAct:hover {
+  background-color: rgb(49, 175, 212);
+}
