@@ -83,7 +83,7 @@ const CreateActivity = () => {
 
     try {
       const allActivities = await axios.get(
-        "https://medconnectback-production.up.railway.app/activity"
+        "http://localhost:3001/activity"
       );
       const activityExist = allActivities.data.some(
         (activity) => activity.name === input.name
