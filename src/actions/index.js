@@ -19,7 +19,7 @@ export const getCountries = () => {
   return async (dispatch) => {
     try {
       let dataInfo = await axios.get(
-        "https://medconnectback-production.up.railway.app/countries"
+        "http://localhost:3001/countries"
       );
 
       return dispatch({
@@ -36,7 +36,7 @@ export const searchByName = (input) => {
   return async (dispatch) => {
     try {
       const search = await axios.get(
-        `https://medconnectback-production.up.railway.app/countries?name= ${input}`
+        `http://localhost:3001/countries?name= ${input}`
       );
       return dispatch({
         type: SEARCH_BY_NAME,
@@ -62,7 +62,7 @@ export const getDetail = (id) => {
   return async (dispatch) => {
     try {
       const detail = await axios.get(
-        `https://medconnectback-production.up.railway.app/countries/${id}`
+        `http://localhost:3001/countries/${id}`
       );
       return dispatch({
         type: GET_COUNTRY_DETAIL,
@@ -78,7 +78,7 @@ export const getActivities = () => {
   return async (dispatch) => {
     try {
       const activity = await axios.get(
-        "https://medconnectback-production.up.railway.app/activity"
+        "http://localhost:3001/activity"
       );
       return dispatch({
         type: GET_ACTIVITIES,
@@ -101,7 +101,7 @@ export const createActivity = (payload) => {
   return async (dispatch) => {
     try {
       const response = await axios.post(
-        "https://medconnectback-production.up.railway.app/activity",
+        "http://localhost:3001/activity",
         activity
       );
 
@@ -122,7 +122,7 @@ export const deleteActivity = (id) => {
   return async (dispatch) => {
     try {
       await axios.delete(
-        `https://medconnectback-production.up.railway.app/activity/${id}`
+        `http://localhost:3001/activity/${id}`
       );
 
       dispatch({
@@ -148,7 +148,7 @@ export const updateActivity = (payload) => {
   return async (dispatch) => {
     try {
       await axios.put(
-        "https://medconnectback-production.up.railway.app/activity",
+        "http://localhost:3001/activity",
         activity
       );
       return dispatch({
