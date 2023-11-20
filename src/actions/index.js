@@ -19,7 +19,7 @@ export const getCountries = () => {
   return async (dispatch) => {
     try {
       let dataInfo = await axios.get(
-        "http://localhost:3001/countries"
+        "https://countries_back.rammerbot.com/countries"
       );
 
       return dispatch({
@@ -36,7 +36,7 @@ export const searchByName = (input) => {
   return async (dispatch) => {
     try {
       const search = await axios.get(
-        `http://localhost:3001/countries?name= ${input}`
+        `https://countries_back.rammerbot.com/countries?name= ${input}`
       );
       return dispatch({
         type: SEARCH_BY_NAME,
@@ -62,7 +62,7 @@ export const getDetail = (id) => {
   return async (dispatch) => {
     try {
       const detail = await axios.get(
-        `http://localhost:3001/countries/${id}`
+        `https://countries_back.rammerbot.com/countries/${id}`
       );
       return dispatch({
         type: GET_COUNTRY_DETAIL,
@@ -78,7 +78,7 @@ export const getActivities = () => {
   return async (dispatch) => {
     try {
       const activity = await axios.get(
-        "http://localhost:3001/activity"
+        "https://countries_back.rammerbot.com/activity"
       );
       return dispatch({
         type: GET_ACTIVITIES,
@@ -101,7 +101,7 @@ export const createActivity = (payload) => {
   return async (dispatch) => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/activity",
+        "https://countries_back.rammerbot.com/activity",
         activity
       );
 
@@ -122,7 +122,7 @@ export const deleteActivity = (id) => {
   return async (dispatch) => {
     try {
       await axios.delete(
-        `http://localhost:3001/activity/${id}`
+        `https://countries_back.rammerbot.com/activity/${id}`
       );
 
       dispatch({
@@ -148,7 +148,7 @@ export const updateActivity = (payload) => {
   return async (dispatch) => {
     try {
       await axios.put(
-        "http://localhost:3001/activity",
+        "https://countries_back.rammerbot.com/activity",
         activity
       );
       return dispatch({
