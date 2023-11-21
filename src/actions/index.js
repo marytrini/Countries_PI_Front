@@ -19,7 +19,7 @@ export const getCountries = () => {
   return async (dispatch) => {
     try {
       let dataInfo = await axios.get(
-        "https://countries_back.rammerbot.com/countries"
+        "https://countries.back.rammerbot.com/countries"
       );
 
       return dispatch({
@@ -36,7 +36,7 @@ export const searchByName = (input) => {
   return async (dispatch) => {
     try {
       const search = await axios.get(
-        `https://countries_back.rammerbot.com/countries?name= ${input}`
+        `https://countries.back.rammerbot.com/countries?name= ${input}`
       );
       return dispatch({
         type: SEARCH_BY_NAME,
@@ -62,7 +62,7 @@ export const getDetail = (id) => {
   return async (dispatch) => {
     try {
       const detail = await axios.get(
-        `https://countries_back.rammerbot.com/countries/${id}`
+        `https://countries.back.rammerbot.com/countries/${id}`
       );
       return dispatch({
         type: GET_COUNTRY_DETAIL,
@@ -78,7 +78,7 @@ export const getActivities = () => {
   return async (dispatch) => {
     try {
       const activity = await axios.get(
-        "https://countries_back.rammerbot.com/activity"
+        "https://countries.back.rammerbot.com/activity"
       );
       return dispatch({
         type: GET_ACTIVITIES,
@@ -101,7 +101,7 @@ export const createActivity = (payload) => {
   return async (dispatch) => {
     try {
       const response = await axios.post(
-        "https://countries_back.rammerbot.com/activity",
+        "https://countries.back.rammerbot.com/activity",
         activity
       );
 
@@ -122,7 +122,7 @@ export const deleteActivity = (id) => {
   return async (dispatch) => {
     try {
       await axios.delete(
-        `https://countries_back.rammerbot.com/activity/${id}`
+        `https://countries.back.rammerbot.com/activity/${id}`
       );
 
       dispatch({
@@ -148,7 +148,7 @@ export const updateActivity = (payload) => {
   return async (dispatch) => {
     try {
       await axios.put(
-        "https://countries_back.rammerbot.com/activity",
+        "https://countries.back.rammerbot.com/activity",
         activity
       );
       return dispatch({
