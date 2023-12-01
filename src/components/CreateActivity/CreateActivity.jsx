@@ -83,7 +83,7 @@ const CreateActivity = () => {
 
     try {
       const allActivities = await axios.get(
-        "http://localhost:3001/activity"
+        "https://grumpy-capris-bass.cyclic.app/activity"
       );
       const activityExist = allActivities.data.some(
         (activity) => activity.name === input.name

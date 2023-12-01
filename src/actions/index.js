@@ -19,7 +19,7 @@ export const getCountries = () => {
   return async (dispatch) => {
     try {
       let dataInfo = await axios.get(
-        "https://countries.back.rammerbot.com/countries"
+        "https://grumpy-capris-bass.cyclic.app/countries"
       );
 
       return dispatch({
@@ -36,7 +36,7 @@ export const searchByName = (input) => {
   return async (dispatch) => {
     try {
       const search = await axios.get(
-        `https://countries.back.rammerbot.com/countries?name= ${input}`
+        `https://grumpy-capris-bass.cyclic.app/countries?name= ${input}`
       );
       return dispatch({
         type: SEARCH_BY_NAME,
@@ -62,7 +62,7 @@ export const getDetail = (id) => {
   return async (dispatch) => {
     try {
       const detail = await axios.get(
-        `https://countries.back.rammerbot.com/countries/${id}`
+        `https://grumpy-capris-bass.cyclic.app/countries/${id}`
       );
       return dispatch({
         type: GET_COUNTRY_DETAIL,
@@ -78,7 +78,7 @@ export const getActivities = () => {
   return async (dispatch) => {
     try {
       const activity = await axios.get(
-        "https://countries.back.rammerbot.com/activity"
+        "https://grumpy-capris-bass.cyclic.app/activity"
       );
       return dispatch({
         type: GET_ACTIVITIES,
@@ -101,7 +101,7 @@ export const createActivity = (payload) => {
   return async (dispatch) => {
     try {
       const response = await axios.post(
-        "https://countries.back.rammerbot.com/activity",
+        "https://grumpy-capris-bass.cyclic.app/activity",
         activity
       );
 
@@ -122,7 +122,7 @@ export const deleteActivity = (id) => {
   return async (dispatch) => {
     try {
       await axios.delete(
-        `https://countries.back.rammerbot.com/activity/${id}`
+        `https://grumpy-capris-bass.cyclic.app/activity/${id}`
       );
 
       dispatch({
@@ -148,7 +148,7 @@ export const updateActivity = (payload) => {
   return async (dispatch) => {
     try {
       await axios.put(
-        "https://countries.back.rammerbot.com/activity",
+        "https://grumpy-capris-bass.cyclic.app/activity",
         activity
       );
       return dispatch({
