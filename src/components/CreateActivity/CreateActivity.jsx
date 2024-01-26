@@ -83,7 +83,7 @@ const CreateActivity = () => {
 
     try {
       const allActivities = await axios.get(
-        "https://grumpy-capris-bass.cyclic.app/activity"
+        "https://api.countries.rammerbot.com/activity"
       );
       const activityExist = allActivities.data.some(
         (activity) => activity.name === input.name
