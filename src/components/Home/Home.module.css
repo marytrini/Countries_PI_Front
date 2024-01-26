@@ -1,6 +1,6 @@
 body {
   background-color: rgb(49, 175, 212);
-  background-image: url("\images\mapa-mundial.png");
+  background-image: url("/public/images/mapa-mundial.png");
   background-position: center;
   background-size: 1200px;
   background-repeat: no-repeat;
