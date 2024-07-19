@@ -32,6 +32,6 @@ Envía un pull request a la rama principal del repositorio.
 
 <h2>Contacto</h2>
 
-Si tienes alguna pregunta, sugerencia o inquietud, no dudes en ponerte en contacto conmigo a través de mi correo electrónico [correo electrónico] o por medio de mi perfil de GitHub [enlace a tu perfil de GitHub].
+Si tienes alguna pregunta, sugerencia o inquietud, no dudes en ponerte en contacto conmigo a través de mi correo electrónico: mariatrinidadsalazarr@gmail.com.
 
 ¡Gracias por tu interés en Countries App! Espero que disfrutes explorando los diferentes países y sus características. Tu contribución y retroalimentación son valoradas para seguir mejorando este proyecto.
